@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recaman Sequence Visualizer</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        #app-container {
+            text-align: center;
+        }
+        #canvas{
+            border: 3px solid red;
+            display: block;
+            margin: 20px auto;
+            background-color: #fff;
+        }
+        #rangeInput {
+            width: 80%;
+            max-width: 400px;
+        }
+        #rangeValue {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app-container">
+    <canvas height="680px" width="1200px" id="canvas"></canvas>
+    <br/>
+    <input type="range" min="0" max="65" id="rangeInput" value="65">
+    <span id="rangeValue">65</span>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
